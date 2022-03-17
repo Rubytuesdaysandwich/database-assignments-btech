@@ -1,0 +1,21 @@
+
+1.)SELECT title, director_name FROM titles INNER JOIN director = director_name ORDER by title
+
+2.)SELECT title, director_name,critics_rating FROM titles INNER JOIN director = director_name INNER JOIN critic_rating=critics_rating ORDER BY critics_rating
+
+3.)SELECT title FROM titles WHERE title LIKE 'l%'
+
+4.)SELECT id,title FROM `titles`ORDER BY id LIMIT 50
+
+5.)SELECT genre FROM genre
+
+6.)SELECT DISTINCT title,genre,critics_rating FROM titles INNER JOIN genre=genre INNER JOIN critic_rating=critics_rating WHERE critics_rating >= 9.8
+
+7.)SELECT DISTINCT title,genre,release_year FROM titles INNER JOIN genre=genre WHERE genre='adventure'
+
+8.)SELECT title, critics_rating from titles INNER JOIN critic_rating=critics_rating where critics_rating >7.5
+
+9.)SELECT title, critics_rating from titles INNER JOIN critic_rating=critics_rating where critics_rating <4
+
+10.)SELECT title, critics_rating from titles INNER JOIN critic_rating=critics_rating where critics_rating BETWEEN 4 AND 7.5
+"title","critics_rating"

@@ -1,0 +1,18 @@
+1.)UPDATE `absence` SET `student_id` = '11' WHERE `absence`.`student_id` = 10 AND `absence`.`date` = '2012-09-09'
+"student_id","date"
+------------------------------------------------------------------------------------------------------------------
+2.)SELECT event_id FROM scores where event_id ='4'
+DELETE FROM `scores` WHERE event_id ='4'
+------------------------------------------------------------------------------------------------------------------
+2.)DELETE FROM `grade_event` WHERE event_id='4'
+"event_id","date","category"
+------------------------------------------------------------------------------------------------------------------
+3.)UPDATE `student` SET `sex` = 'M' WHERE `student`.`sex` ='F' AND `student`.`name` = 'avery'
+------------------------------------------------------------------------------------------------------------------
+4.)SELECT * FROM `student` WHERE name='liesl'
+UPDATE `student` SET `name`= 'Leslie' WHERE `student`.`name`='liesl' AND `student`. `student_id` =7
+------------------------------------------------------------------------------------------------------------------
+5.)SElECT * FROM `students` WHERE `name`='devri'
+DELETE FROM `scores` WHERE student_id=13
+SELECT * FROM `absence` WHERE `student_id`=13
+DELETE FROM `student` WHERE name='devri'

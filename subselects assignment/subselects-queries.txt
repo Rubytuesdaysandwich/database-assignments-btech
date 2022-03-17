@@ -1,0 +1,20 @@
+1.)
+SELECT * FROM orders WHERE customer_id IN (SELECT id FROM `customers` WHERE customers.job_title='owner')
+2.)
+SELECT * FROM orders WHERE orders.status_id IN (SELECT id FROM order_details_status WHERE order_details_status.status_name NOT LIKE "shipped%")
+3.)
+SELECT * FROM `orders` WHERE orders.id IN(SELECT order_id FROM order_details WHERE quantity = 0.00)
+4.)
+SELECT * FROM `orders` WHERE id IN (SELECT order_id FROM order_details WHERE quantity * unit_price = 1000 )
+5.)
+SELECT * FROM `purchase_orders` WHERE status_id IN(SELECT id FROM purchase_order_status where status_id =2)
+6.)
+SELECT orders.*, customers.job_title FROM orders INNER JOIN customers ON customers.id = orders.customer_id WHERE customers.job_title='owner'
+7.)
+SELECT orders.* , order_details_status.id FROM orders INNER JOIN order_details_status ON order_details_status.id= orders.status_id WHERE order_details_status.status_name NOT LIKE "shipped%"
+8.)
+SELECT orders.*,order_details.order_id FROM `orders` INNER JOIN order_details ON order_details.order_id=orders.id WHERE quantity = 0.00
+9.)
+SELECT orders.*, order_details.order_id FROM `orders` INNER JOIN order_details ON order_details.order_id=orders.id WHERE quantity * unit_price = 1000
+10.)
+SELECT purchase_orders.*,purchase_order_status.id FROM `purchase_orders` INNER JOIN purchase_order_status ON purchase_orders.status_id=purchase_order_status.id where status_id =2

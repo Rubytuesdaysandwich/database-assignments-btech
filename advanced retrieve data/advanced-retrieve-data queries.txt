@@ -1,0 +1,19 @@
+1.)SELECT student.name FROM student WHERE student.name LIKE"M%"
+
+2.)SELECT scores.score FROM scores where scores.score LIKE "_1%"
+
+3.)SELECT student.name FROM student WHERE student.name LIKE"%__y%"
+
+4.)SELECT student.name, scores.score,COUNT(scores.score) FROM student INNER JOIN scores ON scores.student_id=student.student_id WHERE scores.score IN(7,8,9,10) GROUP BY scores.score
+
+5.)SELECT scores.score, scores.event_id, AVG(score) FROM scores GROUP BY score,event_id
+
+6.)SELECT AVG(score),student.student_id, scores.score, scores.event_id FROM scores INNER JOIN student ON student.student_id = scores.student_id WHERE scores.event_id NOT IN(3,6) GROUP by score,student_id
+
+7.)SELECT count(*), student.sex FROM student GROUP BY sex
+
+8.)SELECT COUNT(*), student.student_id,absence.date FROM student INNER JOIN absence ON student.student_id=absence.student_id GROUP BY student_id
+
+9.)SELECT employees.id,employees.notes FROM employees WHERE employees.notes IS NOT null
+
+10.)SELECT purchase_orders.* FROM purchase_orders WHERE purchase_orders.approved_date IS null

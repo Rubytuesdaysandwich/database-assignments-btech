@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO `students` (`name`, `sex`, `student_id`) VALUES ('magie','F',1)  ON DUPLICATE KEY UPDATE
+ `name`= VALUES(name);
+INSERT INTO `students` (`name`, `sex`, `student_id`) VALUES ('kyle','M',2)  ON DUPLICATE KEY UPDATE
+ `name`= VALUES(name);
+INSERT INTO `students` (`name`, `sex`, `student_id`) VALUES ('jerlyn','M',3)  ON DUPLICATE KEY UPDATE
+ `name`= VALUES(name);
+INSERT INTO `students` (`name`, `sex`, `student_id`) VALUES ('rebacca','F',4)  ON DUPLICATE KEY UPDATE
+ `name`= VALUES(name);
+INSERT INTO `students` (`name`, `sex`, `student_id`) VALUES ('Abbie','F',5)  ON DUPLICATE KEY UPDATE
+ `name`= VALUES(name);
+INSERT INTO `students` (`name`, `sex`, `student_id`) VALUES ('Nathaniel','M',6)  ON DUPLICATE KEY UPDATE
+ `name`= VALUES(name);
+INSERT INTO `students` (`name`, `sex`, `student_id`) VALUES ('Lieslie','F',7)  ON DUPLICATE KEY UPDATE
+ `name`= VALUES(name);
+INSERT INTO `students` (`name`, `sex`, `student_id`) VALUES ('gordon','M',8)  ON DUPLICATE KEY UPDATE
+ `name`= VALUES(name);
+INSERT INTO `students` (`name`, `sex`, `student_id`) VALUES ('Colin','M',9)  ON DUPLICATE KEY UPDATE
+ `name`= VALUES(name);
+INSERT INTO `students` (`name`, `sex`, `student_id`) VALUES ('Peter','M',10)  ON DUPLICATE KEY UPDATE
+ `name`= VALUES(name);
+
+INSERT INTO `students` VALUES
+('magie','F',1),
+('kyle','M',2),
+ ('jerlyn','M',3),
+ ('rebacca','F',4),
+ ('Abbie','F',5),
+ ('Nathaniel','M',6),
+ ('Lieslie','F',7),
+ ('gordon','M',8),
+ ('Colin','M',9),
+ ('Peter','M',10)
+ ON DUPLICATE KEY UPDATE
+ `name`= VALUES(name)
+
+
+INSERT INTO `students` VALUES ('magie','F',1), ('kyle','M',2), ('jerlyn','M',3), ('rebacca','F',4), ('Abbie','F',5), ('Nathaniel','M',6), ('Lieslie','F',7), ('gordon','M',8), ('Colin','M',9), ('Peter','M',10) ON DUPLICATE KEY UPDATE `name`= VALUES(name)

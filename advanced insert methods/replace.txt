@@ -1,0 +1,25 @@
+REPLACE INTO `students` (`name`, `sex`, `student_id`) VALUES ('Megan','F',1);
+REPLACE INTO `students` (`name`, `sex`, `student_id`) VALUES ('Joseph','M',2);
+REPLACE INTO `students` (`name`, `sex`, `student_id`) VALUES ('Kyle','M',3);
+REPLACE INTO `students` (`name`, `sex`, `student_id`) VALUES ('Katie','F',4);
+REPLACE INTO `students` (`name`, `sex`, `student_id`) VALUES ('Abby','F',5);
+REPLACE INTO `students` (`name`, `sex`, `student_id`) VALUES ('Nathan','M',6);
+REPLACE INTO `students` (`name`, `sex`, `student_id`) VALUES ('Liesl','F',7);
+REPLACE INTO `students` (`name`, `sex`, `student_id`) VALUES ('Ian','M',8);
+REPLACE INTO `students` (`name`, `sex`, `student_id`) VALUES ('Colin','M',9);
+REPLACE INTO `students` (`name`, `sex`, `student_id`) VALUES ('Peter','M',10);
+
+
+REPLACE INTO `students` (`name`, `sex`, `student_id`)VALUES
+('Regan','F',1), 
+('Joseph','M',2),
+ ('Kyle','M',3),
+ ('Katie','F',4),
+ ('Abby','F',5),
+ ('Nathan','M',6),
+ ('Liesl','F',7),
+ ('Ian','M',8),
+ ('Colin','M',9),
+ ('Peter','M',10);
+
+REPLACE INTO `students` (`name`, `sex`, `student_id`)VALUES ('Regan','F',1), ('Joseph','M',2), ('Kyle','M',3), ('Katie','F',4), ('Abby','F',5), ('Nathan','M',6), ('Liesl','F',7), ('Ian','M',8), ('Colin','M',9), ('Peter','M',10)
